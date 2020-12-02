@@ -57,6 +57,10 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource{
             
         }))
         
+        actionSheet.addAction(UIAlertAction(title: "Cancel",
+                                            style: .cancel,
+                                            handler: nil))
+        
         present(actionSheet, animated: true)
     }
 }
