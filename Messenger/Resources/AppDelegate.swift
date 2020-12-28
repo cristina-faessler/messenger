@@ -58,6 +58,7 @@ import GoogleSignIn
         }
         
         UserDefaults.standard.setValue(email, forKey: "email")
+        UserDefaults.standard.setValue("\(firstName) \(lastName)", forKey: "name")
         
         DatabaseManager.shared.userExists(with: email, completion: { exists in
             if !exists {
